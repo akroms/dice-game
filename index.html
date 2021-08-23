@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dice Game</title>
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="dice-game">
+                    <div class="left-player" title="Roll a dice to get score">
+                        <h1>Player 1</h1>
+                        <img
+                            class="dice dice-player-1"
+                            src="./images/dice-faces-1.svg"
+                            alt="dice"
+                        />
+                        <p class="score">
+                            Score: <span class="score-left">0</span>
+                        </p>
+                    </div>
+                    <div
+                        class="winner-player"
+                        title="Who got more score Will Win"
+                    >
+                        <h1 class="winner-bar">Roll a Dice<br />To start</h1>
+                    </div>
+                    <div class="right-player" title="Roll a dice to get score">
+                        <p class="score">
+                            Score: <span class="score-right">0</span>
+                        </p>
+                        <h1>Player 2</h1>
+                        <img
+                            class="dice dice-player-2"
+                            src="./images/dice-faces-1.svg"
+                            alt="dice"
+                        />
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Script file -->
+        <script src="./js/app.js"></script>
+    </body>
+</html>

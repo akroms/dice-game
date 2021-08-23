@@ -1,0 +1,130 @@
+/* Resetting Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+$winner-color: rgb(211, 25, 0);
+$player-color: rgb(36, 50, 241);
+$score-bg-color: rgba(255, 30, 0, 0.13);
+/* Base Styles */
+
+.header {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Odibee Sans', cursive;
+    letter-spacing: 0.3em;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+/* Dice Game Styles */
+
+.dice-game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    & .right-player,
+    & .left-player {
+        color: $player-color;
+        & .score {
+            background-color: $score-bg-color;
+            font-size: 1.3em;
+            border: 2px solid red;
+            border-radius: 15px;
+
+            width: 100%;
+            text-align: center;
+        }
+
+        & .dice {
+            width: 11em;
+            cursor: pointer;
+        }
+    }
+
+    & .right-player {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        & > h1 {
+            margin-top: 0.5em;
+            order: 1;
+        }
+        .score {
+            margin-bottom: 4px;
+        }
+    }
+
+    & .left-player {
+        text-align: center;
+        & > h1 {
+            margin-bottom: 0.5em;
+        }
+    }
+
+    & .winner-player {
+        color: rgb(0, 0, 0);
+        border: 2px solid red;
+        background-color:$score-bg-color;
+        display: flex;
+        width: 11em;
+        height: 11em;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        & > h1 {
+            text-align: center;
+            font-size: 1.7em;
+        }
+    }
+}
+
+/* Responsive */
+
+@media (min-width: 75em) {
+    .dice-game {
+        flex-direction: row;
+        & .left-player,
+        & .right-player {
+            font-size: 1.2em;
+            & > h1 {
+                margin-bottom: 1em;
+            }
+            & .score {
+                margin-top: 1em;
+            }
+            & .dice {
+                width: 13em;
+                max-width: 100%;
+            }
+        }
+
+        & .right-player {
+            & > h1 {
+                margin-top: 0em;
+                order: 0;
+            }
+            & .score {
+                order: 1;
+            }
+        }
+
+        & .winner-player {
+            width: 13em;
+            height: 13em;
+            & > h1 {
+                text-align: center;
+                font-size: 2em;
+            }
+        }
+    }
+}

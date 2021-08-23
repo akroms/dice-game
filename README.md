@@ -1,4 +1,4 @@
-# Pomodoro Timer
+# Dice Game 
 
 <img src="./gif/gif.gif" width="100%"/>
 

@@ -3,7 +3,7 @@
 <img src="./gif/gif.gif" width="100%"/>
 
 To see this site demo
-[click here](https://filp-color.netlify.app/)
+[click here](https://dice-gamee.netlify.app/)
 
 *****************************************************************
 Used technologies: 
